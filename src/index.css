@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-[#0c0d0e] text-[#f4f4f4];
+  }
+}
+
+@layer utilities {
+  .scroller-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  .scroller-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
